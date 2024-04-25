@@ -13,8 +13,6 @@ import {
 } from "react-icons/fa";
 
 const RegistrationForm = () => {
-  const imageURL = "/heroImage.jpg";
-
   const [formData, setFormData] = useState({
     first_name: "",
     last_name: "",
@@ -290,6 +288,11 @@ const RegistrationForm = () => {
                 Niger State.
               </span>
             </div>
+          </div>
+          <div className="justify-center items-center text-center px-auto mt-8">
+            <span className="text-[#EF3F4A] font-medium italic text-[20px] leading-6 ">
+              Powered by Paritie Foundation
+            </span>
           </div>
         </footer>
       </div>
