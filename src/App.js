@@ -3,6 +3,7 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+
 import {
   FaFacebook,
   FaTwitter,
@@ -56,7 +57,7 @@ const RegistrationForm = () => {
         <img
           src="logo.png"
           alt="Header Image"
-          className="max-w-full filter blur-[1px]"
+          className="w-[100px] filter blur-[1px]"
         />
         <a
           href="https://paritie.com/paritie-hub"
@@ -77,17 +78,22 @@ const RegistrationForm = () => {
     </header> */}
         <div className="flex justify-center  max-w-full  ">
           <div
-            className="bg-cover bg-center min-w-full h-[720px] p-4 inset-0 backdrop-blur-sm px-8"
-            style={{ backgroundImage: `url(${imageURL})` }}
+            className="relative bg-cover bg-center min-w-full h-[720px] p-4 inset-0 backdrop-blur-sm px-8"
+            // style={{ backgroundImage: `url(${imageURL})` }}
           >
-            <div className="lg:flex-col  lg:pt-[74px]  lg:text-right">
-              <h1 className="text-[#F0B343] leading-[43px] font-semibold text-[36px] p-4 lg:text-right lg:pl-40 lg:min-w-[644px] ">
+            <img
+              src="./heroImage.jpg"
+              alt="Background Image"
+              class="absolute inset-0 w-full h-full object-cover blur-sm"
+            />
+            <div className="relative lg:flex-col  lg:pt-[74px]  lg:w-[600px] lg:float-end lg:mr-9">
+              <h1 className="text-[#F0B343]  leading-[43px] font-semibold text-[36px] p-4 lg:text-right lg:pl-40 lg:min-w-[644px] ">
                 An exclusive program for females.
               </h1>
               <p className="text-white  text-[60px] leading-[77.45px] font-extrabold lg:text-right  lg:pl-40 lg:min-w-[644px] ">
                 Bootcamp with Paritie Learning Group.{" "}
               </p>
-              <p className="text-white font-medium text-[24px] leading-7 lg:pl-0 ">
+              <p className="text-white font-medium text-[24px] leading-7 lg:text-justify lg:min-w-[644px] ">
                 Join our free boot camp empowering young girls. Exclusively for
                 females, it nurtures the next generation of women. Registration
                 is free, sign up now!
@@ -222,14 +228,14 @@ const RegistrationForm = () => {
         </main>
         <footer className="flex-col p-6 md:px-9 gap-6  ">
           <div className="gap-6 lg:flex lg:justify-between lg:max-w-[1312px] lg:mx-auto">
-            <div className="flex-col py-6 ">
-              <h1 className="gap-6 font-semibold items-start justify-start text-[40px] leading-10 ">
+            <div className="flex-col py-6 gap-6 ">
+              <h1 className="gap-6 font-semibold items-start justify-start text-[40px] leading-10  ">
                 Contact Us
               </h1>
-              <p className="font-light text-[24px] leading-7">
+              <p className="font-light text-[24px] leading-7 py-4 ">
                 +234 817 624 1972
               </p>
-              <p className="font-light text-[24px] leading-7">
+              <p className="font-light text-[24px] leading-7 ">
                 info@paritie.com
               </p>
             </div>
@@ -243,43 +249,43 @@ const RegistrationForm = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFacebook color="#26225D" />
+                  <FaFacebook color="#26225D" size={40} />
                 </a>
                 <a
                   href="https://twitter.com/paritiehub"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaTwitter color="#26225D" width={40} />
+                  <FaTwitter color="#26225D" width={40} size={40} />
                 </a>
                 <a
                   href="https://www.instagram.com/paritiehub"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaInstagram color="#26225D" width={40} />
+                  <FaInstagram color="#26225D" width={40} size={40} />
                 </a>
                 <a
                   href="https://www.linkedin.com/company/paritieltd/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin color="#26225D" width={40} />
+                  <FaLinkedin color="#26225D" width={40} size={40} />
                 </a>
                 <a
                   href="https://youtube.com/@paritieltd?si=S9gGqi9d239gqklJ"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaYoutube color="#26225D" width={40} />
+                  <FaYoutube color="#26225D" size={40} />
                 </a>
               </div>
             </div>
-            <div className="py-6">
-              <h2 className="gap-6 font-semibold items-start justify-start text-[40px] leading-10 ">
+            <div className="py-6 lg:w-[421px]">
+              <h2 className="gap-6 font-semibold items-start justify-start text-[40px] leading-10 py-2 ">
                 Office
               </h2>
-              <span className="px-auto pt-6">
+              <span className="px-auto pt-6 font-light leading-6 text-[20px] ">
                 Suite C1, Peniel Albarka Plaza, Opp. Federal Highcourt, Minna,
                 Niger State.
               </span>
