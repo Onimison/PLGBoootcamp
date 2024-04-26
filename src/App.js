@@ -107,7 +107,7 @@ const RegistrationForm = () => {
           >
             <div className="m-10">
               <h1 className="text-2xl font-bold text-[#26225D] text-center">
-                Registeration
+                Registration
               </h1>
             </div>
             <div className="lg:mt-9 lg:items-end lg:grid lg:grid-cols-2 lg:gap-6">
